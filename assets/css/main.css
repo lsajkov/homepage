@@ -3237,7 +3237,7 @@ input, select, textarea {
 			height: 100%;
 			background-color: #212931;
 			background-image: url("../../images/overlay.png"), linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../../images/rubin_field.png");
-			background-size: 	   auto,	auto,		100% auto;
+			background-size: 	   cover,	cover,		100% cover;
 			background-position:   center,	center,		top center;
 			background-repeat: 	   repeat,	no-repeat,	no-repeat;
 			background-attachment: scroll,	scroll,		scroll;
@@ -3624,12 +3624,12 @@ input, select, textarea {
 		height: 4rem;
 		line-height: 4rem;
 		margin: 0rem auto 0 auto;
-		overflow: hidden;
+		overflow:visible;
 		padding: 0 2rem 0 0;
 		position: relative;
 		width: calc(100% - 4rem);
 		max-width: 72rem;
-		z-index: 2;
+		z-index: 5;
 	}
 
 		#nav ul.divided li {
@@ -4692,3 +4692,47 @@ input, select, textarea {
 		}
 
 	}
+
+
+/* Dropdown button */
+
+.dropbtn{
+	background-color: none;
+	color: none;
+	padding: 0px;
+	font-size: 16px;
+	border: hidden;
+}
+
+.dropdown{
+	position: relative;
+	display: inline-block;
+}
+
+.dropdown-content{
+	display: none;
+	position: absolute;
+	background-color: rgba(255, 255, 255, 0.5);
+	min-width: 4rem;
+	z-index: 10
+}
+
+.dropdown-content a{
+	color: rgba(255, 255, 255, 0.25);
+	padding: 4px 4px;
+	text-decoration: none;
+	display: block;
+}
+
+/* .dropdown-content a:hover {background-color: blue;} */
+
+.dropdown:hover .dropdown-content{
+	display:block;
+	position:absolute;
+}
+
+/* .dropdown:hover{
+	opacity: 0;
+} */
+
+/* .dropdown:hover .dropbtn {background-color: red;} */
