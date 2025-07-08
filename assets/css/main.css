@@ -1,6 +1,7 @@
 @import url(fontawesome-all.min.css);
 @import url("https://fonts.googleapis.com/css?family=Merriweather:300,700,300italic,700italic|Source+Sans+Pro:900");
 
+
 /*
 	Massively by HTML5 UP
 	html5up.net | @ajlkn
@@ -147,8 +148,14 @@ input, select, textarea {
 		color: #212931;
 	}
 
+	@font-face {
+		font-family: "Tenor Sans";
+		src: url(/Users/leo/homepage/assets/fonts/TenorSans-Regular.ttf);
+	  }
+
 	body, input, select, textarea {
-		font-family: Optima, Helvetica, Arial, sans-serif;
+		font-family: "Tenor Sans", Helvetica, Arial sans-serif;
+		/* font-family: Optima, Helvetica, Arial, sans-serif; */
 		/* font-family: "Merriweather", Georgia, serif; */
 		font-weight: 300;
 		font-size: 1rem;
