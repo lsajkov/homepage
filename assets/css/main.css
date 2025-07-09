@@ -1,6 +1,7 @@
 @import url(fontawesome-all.min.css);
 @import url("https://fonts.googleapis.com/css?family=Merriweather:300,700,300italic,700italic|Source+Sans+Pro:900");
 
+
 /*
 	Massively by HTML5 UP
 	html5up.net | @ajlkn
@@ -147,8 +148,19 @@ input, select, textarea {
 		color: #212931;
 	}
 
+	@font-face {
+		font-family: "Tenor Sans";
+		src: url(/Users/leo/homepage/assets/fonts/TenorSans-Regular.ttf);
+	  }
+
+	@font-face{
+		font-family: "Cormorant";
+		src: url(/Users/leo/homepage/assets/fonts/Cormorant-VariableFont_wght.ttf);
+	}
+
 	body, input, select, textarea {
-		font-family: Optima, Helvetica, Arial, sans-serif;
+		font-family: "Tenor Sans", Helvetica, Arial sans-serif;
+		/* font-family: Optima, Helvetica, Arial, sans-serif; */
 		/* font-family: "Merriweather", Georgia, serif; */
 		font-weight: 300;
 		font-size: 1rem;
@@ -182,7 +194,7 @@ input, select, textarea {
 	}
 
 	h1, h2, h3, h4, h5, h6 {
-		font-family: Georgia, 'Times New Roman', Times, serif;
+		font-family: Cormorant, Georgia, 'Times New Roman', Times, serif;
 		/* font-family: "Source Sans Pro", Helvetica, sans-serif; */
 		font-weight: 900;
 		line-height: 1.5;
@@ -3237,10 +3249,10 @@ input, select, textarea {
 			height: 100%;
 			background-color: #212931;
 			background-image: url("../../images/overlay.png"), linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../../images/rubin_field.png");
-			background-size: auto,								auto,														100% auto;
-			background-position: center,								center,														top center;
-			background-repeat: repeat,								no-repeat,													no-repeat;
-			background-attachment: scroll,								scroll,														scroll;
+			background-size: 	   cover,	cover,		100% cover;
+			background-position:   center,	center,		top center;
+			background-repeat: 	   repeat,	no-repeat,	no-repeat;
+			background-attachment: scroll,	scroll,		scroll;
 			z-index: -1;
 		}
 
@@ -3623,13 +3635,13 @@ input, select, textarea {
 		background: rgba(255, 255, 255, 0.175);
 		height: 4rem;
 		line-height: 4rem;
-		margin: -4rem auto 0 auto;
-		overflow: hidden;
+		margin: 0rem auto 0 auto;
+		overflow:visible;
 		padding: 0 2rem 0 0;
 		position: relative;
 		width: calc(100% - 4rem);
 		max-width: 72rem;
-		z-index: 2;
+		z-index: 5;
 	}
 
 		#nav ul.divided li {
@@ -4692,3 +4704,47 @@ input, select, textarea {
 		}
 
 	}
+
+
+/* Dropdown button */
+
+.dropbtn{
+	background-color: none;
+	color: none;
+	padding: 0px;
+	font-size: 16px;
+	border: hidden;
+}
+
+.dropdown{
+	position: relative;
+	display: inline-block;
+}
+
+.dropdown-content{
+	display: none;
+	position: absolute;
+	background-color: rgba(255, 255, 255, 0.5);
+	min-width: 4rem;
+	z-index: 10
+}
+
+.dropdown-content a{
+	color: rgba(255, 255, 255, 0.25);
+	padding: 4px 4px;
+	text-decoration: none;
+	display: block;
+}
+
+/* .dropdown-content a:hover {background-color: blue;} */
+
+.dropdown:hover .dropdown-content{
+	display:block;
+	position:absolute;
+}
+
+/* .dropdown:hover{
+	opacity: 0;
+} */
+
+/* .dropdown:hover .dropbtn {background-color: red;} */

@@ -177,6 +177,9 @@
 						$nav.find('.icons, .icon')
 							.removeClass('alt');
 
+						$nav.find('.icons, .icon')
+							.addClass('primary');
+
 				});
 
 				breakpoints.on('<=medium', function() {
@@ -187,6 +190,9 @@
 					// Flip icon classes.
 						$navPanelInner.find('.icons, .icon')
 							.addClass('alt');
+
+						$navPanelInner.find('.icons, .icon')
+							.removeClass('primary');
 
 				});
 
