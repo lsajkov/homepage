@@ -3319,7 +3319,7 @@ input, select, textarea {
 		-moz-transition: opacity 1s ease, -moz-transform 1s ease;
 		-webkit-transition: opacity 1s ease, -webkit-transform 1s ease;
 		-ms-transition: opacity 1s ease, -ms-transform 1s ease;
-		/* transition: opacity 1s ease, transform 1s ease; */
+		transition: opacity 1s ease, transform 1s ease;
 		position: relative;
 		cursor: default;
 		text-align: center;
@@ -3708,13 +3708,17 @@ input, select, textarea {
 			-webkit-flex-shrink: 1;
 			-ms-flex-shrink: 1;
 			flex-shrink: 1;
-			font-family: "Source Sans Pro", Helvetica, sans-serif;
-			font-weight: 900;
-			letter-spacing: 0.075em;
+			font-family: "Tenor Sans", Helvetica, Arial sans-serif;
+			/* font-family: "Source Sans Pro", Helvetica, sans-serif; */
+			font-weight: bold;
+			/* font-weight: 900; */
+			/* font-size: 400%; */
+			letter-spacing: 0em;
+			/* letter-spacing: 0.075em; */
 			list-style: none;
 			margin-bottom: 0;
 			padding-left: 0;
-			text-transform: uppercase;
+			/* text-transform: uppercase; */
 		}
 
 			#nav ul.links li {
@@ -4404,14 +4408,15 @@ input, select, textarea {
 		position: relative;
 		color: rgba(255, 255, 255, 0.5);
 		cursor: default;
-		font-family: "Source Sans Pro", Helvetica, sans-serif;
-		font-size: 0.8rem;
+		font-family: "Tenor Sans", Helvetica, Arial sans-serif;
+		/* font-family: "Source Sans Pro", Helvetica, sans-serif; */
+		font-size: 0.6rem;
 		font-weight: 900;
 		letter-spacing: 0.075em;
 		line-height: 1.5;
 		text-align: center;
-		text-transform: uppercase;
-		margin: 4rem auto 8rem auto;
+		/* text-transform: uppercase; */
+		margin: 2rem auto 2rem auto;
 		width: calc(100% - 4rem);
 		max-width: 72rem;
 		z-index: 2;
